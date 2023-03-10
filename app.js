@@ -14,6 +14,9 @@ dotenv.config({
   path: "./data/config.env"
 });
 
+const mailchimpApiKey = process.env.MAILCHIMP_API_KEY;
+console.log("mailchimpApiKey:", mailchimpApiKey);
+
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/signup.html");
 });
@@ -41,7 +44,7 @@ app.post("/", function (req, re) {
   const url = "https://us21.api.mailchimp.com/3.0/lists/30efb08666";
   const options = {
     method: "POST",
-    auth: `prathamesh1:${process.env.MAILCHIMP_API_KEY}`
+    auth: `prathamesh1:${mailchimpApiKey}`
   };
 
   const request = https.request(url, options, function (response) {
