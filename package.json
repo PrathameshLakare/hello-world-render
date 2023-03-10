@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Express Hello World on Render",
   "main": "app.js",
-  "repository": "https://github.com/PrathameshLakare/hello-world-render",
+  "repository": "https://github.com/PrathameshLakare/sign-up-email",
   "author": "Prathamesh Lakakre",
   "license": "ISC",
   "scripts": {
