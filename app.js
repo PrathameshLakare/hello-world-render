@@ -15,7 +15,6 @@ dotenv.config({
 });
 
 const mailchimpApiKey = process.env.MAILCHIMP_API_KEY;
-console.log("mailchimpApiKey:", mailchimpApiKey);
 
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/signup.html");
